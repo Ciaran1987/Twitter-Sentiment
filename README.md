@@ -16,4 +16,11 @@ Integrates with Twitter API using python-twitter library to get trends and indiv
 
 Employs Naive Bayes model on trending tweets to perform sentiment analysis and identify positive and negative tweets
 
+Utilises schedule library to automate scripts https://schedule.readthedocs.io/en/stable/
 
+Tweet and Trend responses saved to CSV and sent from EC2 instance to S3 using boto library https://boto3.amazonaws.com/v1/documentation/api/latest/index.html
+
+*Deployment*
+Scripts are deployed on Amazon EC2 instance, automated using schedule library, outputs are saved as CSV's in the instance and also copied to Amazon S3 instance for retention
+
+Data visualization of Twitter Trends implemented in ClicData, https://clicdata.com dashboard available here: https://ciarancarroll.clicdata.com/v/xVPFUAtNVmCT
